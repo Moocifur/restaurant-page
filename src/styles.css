@@ -1,0 +1,9 @@
+/* Basic styles for the template */
+body {
+    background-color: lightblue;
+  }
+  
+  h1 {
+    color: darkblue;
+    text-align: center;
+  }  
