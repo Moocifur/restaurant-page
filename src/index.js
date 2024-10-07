@@ -1,11 +1,11 @@
 // Import styles and other modules
 import './styles.css';
-import { greeting } from './greeting.js';
+import createHomePage from './home.js';
 
-// Test JavaScript functionality
-console.log(greeting);
+document.addEventListener('DOMContentLoaded', () => {
+    //Load the Home page initially
+    createHomePage();
 
-// Create and add a heading to test DOM manipulation
-const heading = document.createElement('h1');
-heading.textContent = 'Hello, Webpack!';
-document.body.appendChild(heading);
+    //Set up event listeners for buttons
+    document.getElementById('home').addEventListenener('click', createHomePage);
+})
