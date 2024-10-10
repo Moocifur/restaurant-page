@@ -110,13 +110,13 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
-/***/ "./src/greeting.js":
-/*!*************************!*\
-  !*** ./src/greeting.js ***!
-  \*************************/
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   greeting: () => (/* binding */ greeting)\n/* harmony export */ });\n// Export a simple greeting message\nconst greeting = 'Hello, David!';//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvZ3JlZXRpbmcuanMiLCJtYXBwaW5ncyI6Ijs7OztBQUFBO0FBQ08iLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly93ZWJwYWNrLXRlbXBsYXRlLy4vc3JjL2dyZWV0aW5nLmpzPzY1NWUiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gRXhwb3J0IGEgc2ltcGxlIGdyZWV0aW5nIG1lc3NhZ2VcbmV4cG9ydCBjb25zdCBncmVldGluZyA9ICdIZWxsbywgRGF2aWQhJzsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/greeting.js\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _assets_images_banh_mi_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/images/banh-mi.jpg */ \"./src/assets/images/banh-mi.jpg\");\n//home.js\n\n//import area?\n\n\n//our main function, the point?\nfunction createHomePage() {\n    //the html connector----\n    const content = document.querySelector('#content');\n    content.textContent = '';\n    //----------------\n\n    //the about aboutCard div----\n    const aboutCard = document.createElement('div');\n\n    //about title\n    const aboutHeader = document.createElement('h2');\n    aboutHeader.textContent = 'About';\n\n    //about img\n    const img = document.createElement('img');\n    img.src = _assets_images_banh_mi_jpg__WEBPACK_IMPORTED_MODULE_0__;\n\n    //the about text\n    const description = document.createElement('p');\n    description.textContent = `Fresh baked bread, fresh, crisp vegatables. Quick and easy no problem.`;\n\n    // the append station--\n    aboutCard.appendChild(aboutHeader);\n    aboutCard.appendChild(img);\n    aboutCard.appendChild(description);\n\n    content.appendChild(aboutCard);\n    //end of aboutCard-----------------------\n\n    //create the hours card----\n    const hoursCard = document.createElement('div');\n\n    //the header for hours\n    const hoursHeader = document.createElement('h2');\n    hoursHeader.textContent = 'Hours';\n\n    //create ul \"not pasted\"\n    const daysUl = document.createElement('ul');\n\n    //hours array object\n    const hours = [\n        'Monday: 6am - 8pm',\n        'Tuesday: 6am - 8pm',\n        'Wednesday: 6am - 8pm',\n        'Thurday: 6am - 8pm',\n        'Friday: 6am - 8pm',\n        'Saturday: 6am -8pm',\n        'Sunday: 6am - 8pm'\n    ];  \n\n    //scroll thru hours array\n    hours.forEach(day => {\n        //create line\n        const daySlot = document.createElement('li');\n        daySlot.textContent = day;\n        daysUl.appendChild(daySlot);\n    });\n\n    //addend station--\n    hoursCard.appendChild(hoursHeader);\n    hoursCard.appendChild(daysUl);\n    content.appendChild(hoursCard);\n};\n//end of hours card------------------------------\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createHomePage);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaG9tZS5qcyIsIm1hcHBpbmdzIjoiOzs7OztBQUFBOztBQUVBO0FBQ2tEOztBQUVsRDtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBLGNBQWMsdURBQU87O0FBRXJCO0FBQ0E7QUFDQTs7QUFFQTtBQUNBO0FBQ0E7QUFDQTs7QUFFQTtBQUNBOztBQUVBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBOztBQUVBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7O0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsS0FBSzs7QUFFTDtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7O0FBRUEsaUVBQWUsY0FBYyxFQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vd2VicGFjay10ZW1wbGF0ZS8uL3NyYy9ob21lLmpzPzdiNDEiXSwic291cmNlc0NvbnRlbnQiOlsiLy9ob21lLmpzXG5cbi8vaW1wb3J0IGFyZWE/XG5pbXBvcnQgbXlJbWFnZSBmcm9tICcuL2Fzc2V0cy9pbWFnZXMvYmFuaC1taS5qcGcnO1xuXG4vL291ciBtYWluIGZ1bmN0aW9uLCB0aGUgcG9pbnQ/XG5mdW5jdGlvbiBjcmVhdGVIb21lUGFnZSgpIHtcbiAgICAvL3RoZSBodG1sIGNvbm5lY3Rvci0tLS1cbiAgICBjb25zdCBjb250ZW50ID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcignI2NvbnRlbnQnKTtcbiAgICBjb250ZW50LnRleHRDb250ZW50ID0gJyc7XG4gICAgLy8tLS0tLS0tLS0tLS0tLS0tXG5cbiAgICAvL3RoZSBhYm91dCBhYm91dENhcmQgZGl2LS0tLVxuICAgIGNvbnN0IGFib3V0Q2FyZCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2RpdicpO1xuXG4gICAgLy9hYm91dCB0aXRsZVxuICAgIGNvbnN0IGFib3V0SGVhZGVyID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnaDInKTtcbiAgICBhYm91dEhlYWRlci50ZXh0Q29udGVudCA9ICdBYm91dCc7XG5cbiAgICAvL2Fib3V0IGltZ1xuICAgIGNvbnN0IGltZyA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2ltZycpO1xuICAgIGltZy5zcmMgPSBteUltYWdlO1xuXG4gICAgLy90aGUgYWJvdXQgdGV4dFxuICAgIGNvbnN0IGRlc2NyaXB0aW9uID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgncCcpO1xuICAgIGRlc2NyaXB0aW9uLnRleHRDb250ZW50ID0gYEZyZXNoIGJha2VkIGJyZWFkLCBmcmVzaCwgY3Jpc3AgdmVnYXRhYmxlcy4gUXVpY2sgYW5kIGVhc3kgbm8gcHJvYmxlbS5gO1xuXG4gICAgLy8gdGhlIGFwcGVuZCBzdGF0aW9uLS1cbiAgICBhYm91dENhcmQuYXBwZW5kQ2hpbGQoYWJvdXRIZWFkZXIpO1xuICAgIGFib3V0Q2FyZC5hcHBlbmRDaGlsZChpbWcpO1xuICAgIGFib3V0Q2FyZC5hcHBlbmRDaGlsZChkZXNjcmlwdGlvbik7XG5cbiAgICBjb250ZW50LmFwcGVuZENoaWxkKGFib3V0Q2FyZCk7XG4gICAgLy9lbmQgb2YgYWJvdXRDYXJkLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cblxuICAgIC8vY3JlYXRlIHRoZSBob3VycyBjYXJkLS0tLVxuICAgIGNvbnN0IGhvdXJzQ2FyZCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2RpdicpO1xuXG4gICAgLy90aGUgaGVhZGVyIGZvciBob3Vyc1xuICAgIGNvbnN0IGhvdXJzSGVhZGVyID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnaDInKTtcbiAgICBob3Vyc0hlYWRlci50ZXh0Q29udGVudCA9ICdIb3Vycyc7XG5cbiAgICAvL2NyZWF0ZSB1bCBcIm5vdCBwYXN0ZWRcIlxuICAgIGNvbnN0IGRheXNVbCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3VsJyk7XG5cbiAgICAvL2hvdXJzIGFycmF5IG9iamVjdFxuICAgIGNvbnN0IGhvdXJzID0gW1xuICAgICAgICAnTW9uZGF5OiA2YW0gLSA4cG0nLFxuICAgICAgICAnVHVlc2RheTogNmFtIC0gOHBtJyxcbiAgICAgICAgJ1dlZG5lc2RheTogNmFtIC0gOHBtJyxcbiAgICAgICAgJ1RodXJkYXk6IDZhbSAtIDhwbScsXG4gICAgICAgICdGcmlkYXk6IDZhbSAtIDhwbScsXG4gICAgICAgICdTYXR1cmRheTogNmFtIC04cG0nLFxuICAgICAgICAnU3VuZGF5OiA2YW0gLSA4cG0nXG4gICAgXTsgIFxuXG4gICAgLy9zY3JvbGwgdGhydSBob3VycyBhcnJheVxuICAgIGhvdXJzLmZvckVhY2goZGF5ID0+IHtcbiAgICAgICAgLy9jcmVhdGUgbGluZVxuICAgICAgICBjb25zdCBkYXlTbG90ID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnbGknKTtcbiAgICAgICAgZGF5U2xvdC50ZXh0Q29udGVudCA9IGRheTtcbiAgICAgICAgZGF5c1VsLmFwcGVuZENoaWxkKGRheVNsb3QpO1xuICAgIH0pO1xuXG4gICAgLy9hZGRlbmQgc3RhdGlvbi0tXG4gICAgaG91cnNDYXJkLmFwcGVuZENoaWxkKGhvdXJzSGVhZGVyKTtcbiAgICBob3Vyc0NhcmQuYXBwZW5kQ2hpbGQoZGF5c1VsKTtcbiAgICBjb250ZW50LmFwcGVuZENoaWxkKGhvdXJzQ2FyZCk7XG59O1xuLy9lbmQgb2YgaG91cnMgY2FyZC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLVxuXG5leHBvcnQgZGVmYXVsdCBjcmVhdGVIb21lUGFnZTtcbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/home.js\n");
 
 /***/ }),
 
@@ -126,7 +126,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _greeting_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./greeting.js */ \"./src/greeting.js\");\n// Import styles and other modules\n\n\n\n// Test JavaScript functionality\nconsole.log(_greeting_js__WEBPACK_IMPORTED_MODULE_1__.greeting);\n\n// Create and add a heading to test DOM manipulation\nconst heading = document.createElement('h1');\nheading.textContent = 'Hello, Webpack!';\ndocument.body.appendChild(heading);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW5kZXguanMiLCJtYXBwaW5ncyI6Ijs7O0FBQUE7QUFDc0I7QUFDbUI7O0FBRXpDO0FBQ0EsWUFBWSxrREFBUTs7QUFFcEI7QUFDQTtBQUNBO0FBQ0EiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly93ZWJwYWNrLXRlbXBsYXRlLy4vc3JjL2luZGV4LmpzP2I2MzUiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gSW1wb3J0IHN0eWxlcyBhbmQgb3RoZXIgbW9kdWxlc1xuaW1wb3J0ICcuL3N0eWxlcy5jc3MnO1xuaW1wb3J0IHsgZ3JlZXRpbmcgfSBmcm9tICcuL2dyZWV0aW5nLmpzJztcblxuLy8gVGVzdCBKYXZhU2NyaXB0IGZ1bmN0aW9uYWxpdHlcbmNvbnNvbGUubG9nKGdyZWV0aW5nKTtcblxuLy8gQ3JlYXRlIGFuZCBhZGQgYSBoZWFkaW5nIHRvIHRlc3QgRE9NIG1hbmlwdWxhdGlvblxuY29uc3QgaGVhZGluZyA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2gxJyk7XG5oZWFkaW5nLnRleHRDb250ZW50ID0gJ0hlbGxvLCBXZWJwYWNrISc7XG5kb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKGhlYWRpbmcpOyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/index.js\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n// Import styles and other modules\n\n\n\ndocument.addEventListener('DOMContentLoaded', () => {\n    //Load the Home page initially\n    (0,_home_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n    //Set up event listeners for buttons\n    document.getElementById('home').addEventListenener('click', _home_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\n})//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW5kZXguanMiLCJtYXBwaW5ncyI6Ijs7O0FBQUE7QUFDc0I7QUFDaUI7O0FBRXZDO0FBQ0E7QUFDQSxJQUFJLG9EQUFjOztBQUVsQjtBQUNBLGdFQUFnRSxnREFBYztBQUM5RSxDQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vd2VicGFjay10ZW1wbGF0ZS8uL3NyYy9pbmRleC5qcz9iNjM1Il0sInNvdXJjZXNDb250ZW50IjpbIi8vIEltcG9ydCBzdHlsZXMgYW5kIG90aGVyIG1vZHVsZXNcbmltcG9ydCAnLi9zdHlsZXMuY3NzJztcbmltcG9ydCBjcmVhdGVIb21lUGFnZSBmcm9tICcuL2hvbWUuanMnO1xuXG5kb2N1bWVudC5hZGRFdmVudExpc3RlbmVyKCdET01Db250ZW50TG9hZGVkJywgKCkgPT4ge1xuICAgIC8vTG9hZCB0aGUgSG9tZSBwYWdlIGluaXRpYWxseVxuICAgIGNyZWF0ZUhvbWVQYWdlKCk7XG5cbiAgICAvL1NldCB1cCBldmVudCBsaXN0ZW5lcnMgZm9yIGJ1dHRvbnNcbiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnaG9tZScpLmFkZEV2ZW50TGlzdGVuZW5lcignY2xpY2snLCBjcmVhdGVIb21lUGFnZSk7XG59KSJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/index.js\n");
+
+/***/ }),
+
+/***/ "./src/assets/images/banh-mi.jpg":
+/*!***************************************!*\
+  !*** ./src/assets/images/banh-mi.jpg ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "7afa17da80ddc6fc1780.jpg";
 
 /***/ })
 
@@ -181,6 +191,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -195,6 +217,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript && document.currentScript.tagName.toUpperCase() === 'SCRIPT')
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
