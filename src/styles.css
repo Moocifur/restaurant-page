@@ -7,3 +7,16 @@ body {
     color: darkblue;
     text-align: center;
   }  
+
+  .menu-card {
+    background-color: darkblue;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+
+  }
+
+  .back-card {
+    background-color: grey;
+    padding: 50px;
+  }

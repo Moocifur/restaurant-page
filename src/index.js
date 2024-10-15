@@ -6,7 +6,7 @@ import createMenuPage from './menu.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     //Load the Home page initially
-    createHomePage();
+    createMenuPage();
 
     //Set up event listeners for buttons
     document.getElementById('home').addEventListener('click', createHomePage);
