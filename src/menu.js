@@ -4,6 +4,8 @@
 import banhImage from './assets/images/menu-banh.jpeg';
 import springImage from './assets/images/menu-rolls.jpeg';
 import phoImage from './assets/images/menu-pho.jpg';
+import coffeeImage from './assets/images/menu-coffee.jpeg';
+import nuocMatImage from './assets/images/menu-nuocMat.jpeg';
 
 function createMenuPage() {
     //grab and refresh---------------------
@@ -109,7 +111,7 @@ function createMenuPage() {
 
     //price
     const phoPrice = document.createElement('p');
-    phoPrice.textContent = '10.00';
+    phoPrice.textContent = '$10.00';
 
     //description
     const phoDesc = document.createElement('p');
@@ -127,14 +129,77 @@ function createMenuPage() {
     drinksDiv.classList.add('menu-headers');
     drinksDiv.textContent ='Drinks';
 
-    //viet ice tea boi!!
+    //viet ice tea boi!!-----------------
+    const coffeeCard = document.createElement('div');
+    coffeeCard.classList.add('menu-card');
+
+    //coffee image
+    const coffeeImg = document.createElement('img');
+    coffeeImg.src = coffeeImage;
+
+    //textwrap
+    const coffeeTextWrap = document.createElement('div');
+    coffeeTextWrap.classList.add('text-wrap');
+
+    //name
+    const coffeeName = document.createElement('h3');
+    coffeeName.textContent = 'Vietnamese Iced Coffee';
+
+    //price
+    const coffeePrice = document.createElement('p');
+    coffeePrice.textContent = '$3.00';
+
+    //description
+    const coffeeDesc = document.createElement('p');
+    coffeeDesc.textContent = 'Wanna get cracked out and stay awake all night? Then here it is!';
+
+    //append
+    coffeeCard.appendChild(coffeeImg);
+    coffeeCard.appendChild(coffeeTextWrap);
+    coffeeTextWrap.appendChild(coffeeName);
+    coffeeTextWrap.appendChild(coffeePrice);
+    coffeeCard.appendChild(coffeeDesc);
+
+    //last one, nuoc mat
     
+    //card
+    const nuocMatCard = document.createElement('div');
+    nuocMatCard.classList.add('menu-card');
+    
+    //img
+    const nuocMatImg = document.createElement('img');
+    nuocMatImg.src = nuocMatImage;
+
+    //textwrap
+    const nuocMatTextWrap = document.createElement('div');
+    nuocMatTextWrap.classList.add('text-wrap');
+    
+    //name
+    const nuocMatName = document.createElement('h3');
+    nuocMatName.textContent = 'Nuoc Mat';
+    
+    //price
+    const nuocMatPrice = document.createElement('p');
+    nuocMatPrice.textContent = '$6.00';
+
+    //desc
+    const nuocMatDesc = document.createElement('p');
+    nuocMatDesc.textContent = 'Artichoke Tea of the Panda!';
+
+    //append
+    nuocMatCard.appendChild(nuocMatImg);
+    nuocMatCard.appendChild(nuocMatTextWrap);
+    nuocMatTextWrap.appendChild(nuocMatName);
+    nuocMatTextWrap.appendChild(nuocMatPrice);
+    nuocMatCard.appendChild(nuocMatDesc);
 
     //Place to backcard------------------------------
     backCard.appendChild(banhMiCard);
     backCard.appendChild(springRollCard);
     backCard.appendChild(phoCard);
     backCard.appendChild(drinksDiv);
+    backCard.appendChild(coffeeCard);
+    backCard.appendChild(nuocMatCard);
 
     //The Final Append
     content.appendChild(backCard);

@@ -13,6 +13,7 @@ module.exports = {
   devServer: {
     static: './dist', // Serve files from the 'dist' directory
     watchFiles: ['./src/template.html'], // Watch changes in the HTML template
+    open: true
   },
   plugins: [
     new HtmlWebpackPlugin({
