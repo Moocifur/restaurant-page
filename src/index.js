@@ -6,9 +6,10 @@ import createContactPage from './contact.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     //Load the Home page initially
-    createMenuPage();
+    createContactPage();
 
     //Set up event listeners for buttons
     document.getElementById('home').addEventListener('click', createHomePage);
     document.getElementById('menu').addEventListener('click', createMenuPage);
+    document.getElementById('contact').addEventListener('click', createContactPage);
 })
