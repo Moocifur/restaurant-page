@@ -6,7 +6,7 @@ import createContactPage from './contact.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     //Load the Home page initially
-    createContactPage();
+    createHomePage();
 
     //Set up event listeners for buttons
     document.getElementById('home').addEventListener('click', createHomePage);
